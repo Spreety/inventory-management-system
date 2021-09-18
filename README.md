@@ -7,9 +7,12 @@ Title: Inventory Management System
 
 Author: C. Melissa Epperson
 Software 1 Project
+IntelliJ IDEA Community 2020.2
+Java 8
+Version 1 
 Date: 11/10/2020
 
-The purpose of this app is to provide a meeting scheduling system. It allows the user to schedule, update, and cancel meetings. The user has the ability to view upcoming meetings for the week or month, as well as all scheduled meetings. The app also allows the user to add, update, and delete employees. Reports are able to be generated that show either employee appointment totals, employees by Country, or employee schedules.
+The purpose of this app is to provide an inventory management system. It allows the user to add, delete and modify products and parts. Each product has parts associated with it. There is a check that does not allow products to be deleted if it still has parts associated with it. 
 
 This was my Software 1 project for my BS in Software Developement. 
 
