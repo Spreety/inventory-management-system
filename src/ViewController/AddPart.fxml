@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c7c9c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddPartController">
+    <children>
+        <SplitPane dividerPositions="0.11578947368421053" layoutX="114.0" layoutY="9.0" orientation="VERTICAL" prefHeight="382.0" prefWidth="373.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #93ADD4; -fx-background-radius: 20; -fx-border-radius: 20;" SplitPane.resizableWithParent="false">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93add4" height="26.0" layoutY="16.0" stroke="TRANSPARENT" strokeType="INSIDE" width="371.0" />
+                        <Label fx:id="AddPartTitle" layoutX="124.0" layoutY="1.0" text="Add Part">
+                            <font>
+                                <Font name="System Font" size="34.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                    <children>
+                        <Button layoutX="262.0" layoutY="295.0" mnemonicParsing="false" onAction="#cancelAddPart" text="Cancel" />
+                        <Button layoutX="157.0" layoutY="295.0" mnemonicParsing="false" onAction="#savePart" prefHeight="27.0" prefWidth="57.0" text="Save" />
+                        <Label fx:id="DynamicLabel" layoutX="43.0" layoutY="249.0" text="Company">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="CompanyField" layoutX="157.0" layoutY="248.0" promptText=" " />
+                        <TextField fx:id="PriceField" layoutX="157.0" layoutY="166.0" promptText="Price/ Cost">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="MinTitle" layoutX="220.0" layoutY="209.0" text="Min">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="MaxTitle" layoutX="89.0" layoutY="210.0" text="Max">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="MinField" layoutX="265.0" layoutY="209.0" prefHeight="27.0" prefWidth="51.0" promptText="Min">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="MaxField" layoutX="156.0" layoutY="210.0" prefHeight="27.0" prefWidth="51.0" promptText="Max">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="InventoryField" layoutX="157.0" layoutY="127.0" promptText="Inventory Level" />
+                        <Label fx:id="InventoryTitle" layoutX="47.0" layoutY="128.0" text="Inventory">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="NameField" layoutX="157.0" layoutY="88.0" promptText="Part Name" />
+                        <Label fx:id="NameTitle" layoutX="78.0" layoutY="89.0" text="Name">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="IDField" editable="false" layoutX="156.0" layoutY="46.0" style="-fx-background-color: E2E3E3;" />
+                        <RadioButton fx:id="OutsourcedRadio" layoutX="207.0" layoutY="16.0" mnemonicParsing="false" onAction="#Outsourced" selected="true" text="Outsourced">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="partInOrOut" />
+                     </toggleGroup></RadioButton>
+                        <Label fx:id="PriceTitle" layoutX="82.0" layoutY="167.0" text="Price">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="InHouseRadio" layoutX="90.0" layoutY="16.0" mnemonicParsing="false" onAction="#InHouse" text="In-House" toggleGroup="$partInOrOut" />
+                        <Label fx:id="IDTitle" layoutX="108.0" layoutY="47.0" text="ID">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
