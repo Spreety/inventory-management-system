@@ -32,7 +32,7 @@ This screen auto-populates with the information for the selected part. You are a
 <img width="400" alt="Modify part screenshot" src="https://user-images.githubusercontent.com/25159870/150701982-4783f007-d45c-4a76-989e-a07088cd1eff.jpg">
 
 **Add Product Screen**
-This screen allows you to add a new product. The ID number is auto-populated. You can add parts that are needed for this product, or delete them in a part was added in error. There is also a search option to search for parts. You will get an alert if your min is higher than your max amount.
+This screen allows you to add a new product. The ID number is auto-populated. You can add parts that are needed for this product, or delete them if a part was added in error. There is also a search option to search for parts. You will get an alert if your min is higher than your max amount.
 
 <img width="400" alt="Add product screenshot" src="https://user-images.githubusercontent.com/25159870/150702114-8cccbc0f-aab0-4b3a-800a-df6cdf2bad37.jpg">
 
